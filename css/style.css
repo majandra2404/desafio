@@ -60,7 +60,13 @@ body{
  box-sizing: border-box;
  text-decoration:none;
 
+
+
+
 }
+
+
+
 .logo p a{
     color: white;
     font-size: 40px;
@@ -138,13 +144,39 @@ img{
     padding:13px;
     width:300px;
     height:300px;
+    
+}
+.galeria{
+    height: 400px;
+    text-align: justify;
+   
+}
+.galeria{
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+ }
+ 
+ 
+ @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+ }
+ 
+
+
    
     
         
     
-}
+
 .body{
     text-align: center;
+    background: radial-gradient(ellipse, navy, pink, blueviolet);
 }
 @media screen and (max-width: 768px) {
     .body{
