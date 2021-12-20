@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+}
+body{
+   
+    background-size: 100%;
+    
+}
+.grid{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+grid-template-rows: 1fr 2fr 1fr;
+grid-template-areas: 
+"header header header"
+"section section aside"
+"grid_footer grid_footer grid footer"
+;
+
+}
+
+.section-galeria{
+    background: url('../imagenes/fondo2.jpg');
+}
+.header{
+
+    grid-area: header;
+    width: 100%;
+    background-color: fuchsia;
+    height: 70px;
+
+}
+ .section{
+    
+
+ }
+.asaide{
+    grid-area: asaide;
+}
+.grid_footer{
+
+    grid-area: grid_footer;
+    width: 100%;
+    overflow: hidden;
+    background: aqua;
+    color:rgb(56, 46, 3);
+    padding: 15px 0;
+    text-align: justify;
+}
+
+.ancho{
+    width: 80%;
+    height: 70px;
+    background:fuchsia;
+    margin:auto;
+}
+.logo{
+ width:30%;
+ height: 450px;
+ float: left;
+ padding-top: 10px;
+ box-sizing: border-box;
+ text-decoration:none;
+
+}
+.logo p a{
+    color: white;
+    font-size: 40px;
+    text-decoration:none;
+    font-weight: bold;
+}
+nav{
+    width: 70%;
+    height: 70px;
+    background: fuchsia;
+    float:left;
+    text-align: right;
+    padding-top: 24px;
+    box-sizing: border-box;
+}
+nav ul li{
+    display: inline;
+}
+nav ul li a{
+
+color: white;
+font-size: 16px;
+text-decoration: none;
+text-transform: uppercase;
+padding-left: 15px;
+font-weight: bold;
+letter-spacing: 1px;
+
+}
+nav ul li a:hover{
+
+    color:grey;
+}

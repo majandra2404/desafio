@@ -1,0 +1,180 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    background-size:100%;
+}
+.main{
+    width: 100%;
+    height: 95%;
+    display:grid;
+    grid-template-columns:repeat(3, 1fr) ;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header header"
+    "section section section"
+    "footer footer footer"
+    ;
+
+}
+.header {
+    grid-area: header;
+    width: 100%;
+    background-color: fuchsia;
+    height: 70px; 
+    display: flex;
+
+}
+.section{
+    grid-area: section;
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+    background-color:white;
+}
+
+.footer{
+    grid-area: footer;
+    width: 100%;
+    overflow: hidden;
+    background: aqua;
+    color:rgb(56, 46, 3);
+    padding: 15px 0;
+   
+}
+
+.ancho{
+    width: 80%;
+    height: 70px;
+    background:fuchsia;
+    margin:auto;
+}
+.logo{
+ width:30%;
+ height: 450px;
+ float: left;
+ padding-top: 10px;
+ box-sizing: border-box;
+ text-decoration:none;
+
+}
+.logo p a{
+    color: white;
+    font-size: 40px;
+    text-decoration:none;
+    font-weight: bold;
+}
+nav{
+    width: 70%;
+    height: 70px;
+    background: fuchsia;
+    float:left;
+    text-align: right;
+    padding-top: 24px;
+    box-sizing: border-box;
+}
+nav ul li{
+    display: inline;
+}
+nav ul li a{
+
+color: white;
+font-size: 16px;
+text-decoration: none;
+text-transform: uppercase;
+padding-left: 15px;
+font-weight: bold;
+letter-spacing: 1px;
+
+}
+nav ul li a:hover{
+
+    color:grey;
+}
+.container-footer{
+    display: inline-flex;
+}
+.column1{
+    display:block;
+
+}
+.column2{
+display: block;
+}
+.column3{
+    display: block;
+}
+
+h3{
+    text-align: left;
+}
+.container-footer{
+    display: inline;
+}
+.column1 .column2 .column3{
+    display: inline;
+}
+.container-footer{
+
+  display: flex;
+  flex-direction: row;
+  
+}
+.copyrigth{
+    text-align: center;
+}
+.condiciones{
+    text-align: center;
+}
+img{
+
+    padding: 5px;
+    margin:20px auto;
+    border-radius:5px;
+    border: 1px solid #999;
+    padding:13px;
+    width:300px;
+    height:300px;
+   
+    
+        
+    
+}
+.body{
+    text-align: center;
+}
+@media screen and (max-width: 768px) {
+    .body{
+        background-color: brown;
+    }
+    nav ul li{
+        display: block;
+    }
+   .section {
+        flex-wrap:wrap ;
+        background-color: blueviolet;
+      }
+    .container-footer{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .body{
+        background-color: cornflowerblue;
+    }
+    .section {
+         flex-direction:column ;
+         background-color: rgb(25, 230, 151);
+       }
+     .container-footer{
+         flex-direction: column;
+     }
+ }
+ 
+
+
+
